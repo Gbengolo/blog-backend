@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../Database/database.js');
 const verifyToken = require('../middleware/verifytoken.js');
-const upload = require('../Middleware/upload.js');
+const upload = require('../middleware/upload.js');
 
 router.get('/', (req, res) => {
     const page = parseInt(req.query.page) || 1;

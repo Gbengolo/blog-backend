@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../Database/database.js');
-const verifyToken = require('../Middleware/verifytoken.js');
+const verifyToken = require('../middleware/verifytoken.js');
 
 router.get('/posts/:postId/comments', (req, res) => {
     const postId = parseInt(req.params.postId, 10);
